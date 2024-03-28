@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2:hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+ body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue1);
+    color: var(--White);
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .card{
+    font-size: 18;
+    background-color: var(--Very-dark-blue2);
+    padding: 1.4rem;
+    margin: auto;
+    width: 18rem;
+    height: 30rem;
+    border-radius: 0.6rem;
+    white-space: inherit;
+ }
+ .equil{
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+ }
+ .card-image{
+    border-radius: 0.6rem;
+    max-width: 100%;
+    max-height: 100%;
+ }
+ .card-header{
+    font-size: 0.7rem;
+    white-space: normal;
+ }
+ .text{
+    margin: 0.4rem 0rem;
+    font-size: 1rem;
+    color: var(--Very-dark-blue3);
+    margin-bottom: 1.3rem;
+    margin-top: 0.9rem;
+ }
+ .ETH{
+    font-size: 18;
+    color: var(--Cyan);
+    height: 45%;
+ }
+ .price-days{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18;
+    margin-bottom: 0.6rem;
+ }
+ .creator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.4rem;
+ }
+ .avatar{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.9rem;
+    border: 1px solid #ddd;
+
+ }
+ .time{
+    font-size: 18;
+    color: white;
+ }
+ .hover{
+    margin-top: 0.9rem;
+    color: white;
+ }
+ .hover:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+ }
+ @media only screen and (max-width: 375px) {
+    .card {
+      width: 300px;
+    }
+    .card {
+      font-size: 0.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
